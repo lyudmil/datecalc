@@ -1,10 +1,11 @@
 package datespecification;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static com.domainlanguage.time.CalendarDate.date;
 import com.domainlanguage.time.CalendarDate;
-import static datespecification.DateSpecifications.*;
+import org.junit.Test;
+
+import static com.domainlanguage.time.CalendarDate.date;
+import static datespecification.DateSpecifications.hardCoded;
+import static org.junit.Assert.assertEquals;
 
 public class PlusMonthsDateSpecificationTest {
     @Test

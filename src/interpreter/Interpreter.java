@@ -1,19 +1,12 @@
 package interpreter;
 
-import datespecification.DateSpecification;
-import datespecification.HardCodedDateSpecification;
-import datespecification.DateSpecifications;
-import static datespecification.DateSpecifications.*;
-import static datespecification.DateSpecifications.*;
-import static datespecification.DateSpecifications.*;
 import com.domainlanguage.time.CalendarDate;
+import datespecification.DateSpecification;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import java.text.SimpleDateFormat;
+import java.util.regex.Pattern;
+
+import static datespecification.DateSpecifications.*;
 
 public class Interpreter {
     private static final Pattern DATE_PATTERN = Pattern.compile("\\d+/\\d+/\\d+");

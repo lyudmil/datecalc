@@ -28,7 +28,13 @@ public class InterpreterTest {
 
     @Test
     public void complicatedExpression() {
-        DateSpecification spec1 = Interpreter.parse("earlier of 4/5/2009 and 3/3/2000 plus 4 months");
-        assertEquals(date(2000, 7, 3), spec1.evaluate());
+        DateSpecification spec = Interpreter.parse("earlier of 4/5/2009 and 3/3/2000 plus 4 months");
+        assertEquals(date(2000, 7, 3), spec.evaluate());
+    }
+
+    @Test
+    public void veryComplicatedExpression() {
+        DateSpecification spec = Interpreter.parse("earlier of later of 4/5/2009 and 3/3/2000 and 5/5/2009 plus 4 months");
+        assertEquals(date(2009, 4, 5), spec.evaluate());
     }
 }

@@ -1,11 +1,11 @@
 package datespecification;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 import com.domainlanguage.time.CalendarDate;
+import org.junit.Test;
+
 import static com.domainlanguage.time.CalendarDate.date;
-import datespecification.LaterOfDateSpec;
-import static datespecification.DateSpecifications.*;
+import static datespecification.DateSpecifications.hardCoded;
+import static org.junit.Assert.assertEquals;
 
 public class LaterOfDateSpecTest {
     @Test
